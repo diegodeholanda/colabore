@@ -1,0 +1,3 @@
+O projeto não está completo, ficou faltando estiliza-lo e fazer uso do css. Encontrei algumas dificuldades em utilizar o Ionic e AngularJS, visto que eu nunca tinha usado ou estudado ambos.
+
+Agradeço pela oportunidade de concorrer à bolsa de FrontEnd.  

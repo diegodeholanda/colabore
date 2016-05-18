@@ -1,0 +1,30 @@
+<ion-view view-title="Pesquisas">
+  <ion-content class="padding">
+    <div class="list list-inset">
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" placeholder="Pesquisar">
+      </label>
+    </div>
+    <div class="list card" ng-repeat="publicacao in publicacoes">
+
+      <div class="item item-avatar">
+        <img src="{{publicacao.face}}">
+        <h2>{{publicacao.nome}}</h2>
+        <p>{{publicacao.data}}</p>
+      </div>
+      <div class="item item-body">
+        <img class="full-image" src="{{publicacao.foto}}">
+        <p>
+          {{publicacao.descricao}}
+        </p>
+        <p>
+          <a ng-href="#/tab/fiscalizar" ng-click="apoiar(publicacao.id)" class="subdued">({{publicacao.quantidadeApoiadores}}) Apoiar \O/</a>
+          <a ng-href="#/tab/fiscalizar/{{publicacao.id}}" class="subdued">Comentários</a>
+          <a ng-href="#/tab/fiscalizar" class="subdued">Divulgar</a>
+        </p>
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>
